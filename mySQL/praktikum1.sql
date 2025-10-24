@@ -44,11 +44,14 @@ where list_price - 5 >  standard_cost;
 # 11. Выбрать все строки из таблицы products, где reorder_level в два раза меньше target_level.
 select * from northwind.products
 where reorder_level * 2 = target_level;
+# where reorder_level = target_level/2;
+# where target_level/reorder_level = 2;
 
 # 12. Выберите все строки из таблицы products, для которых product_code содержит 'NWTSO' и стандартная
 # себестоимость standard_cost равна 1, либо минимальная цена list_price меньше 5 и target_level = 40.
 select * from northwind.products
 where (product_code like '%NWTSO%' and standard_cost = 1) or (list_price < 5 and target_level = 40);
+# можно было без скобок
 
 # 13. Выберите все строки из таблицы products, для которых product_code содержит 'NWTSO' или стандартная себестоимость standard_cost равна 1 
 # минимальная. При этом target_level должен быть равен 40. Решить задачу двумя способами.

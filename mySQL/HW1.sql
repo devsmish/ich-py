@@ -4,7 +4,7 @@ SELECT
     *
 FROM
     suppliers;
-# 2. Выберите только те строки из таблицы suppliers где company имеет значение Supplier A
+# 2. Выберите только те строки из таблицы suppliers, где company имеет значение Supplier A
 SELECT 
     *
 FROM
@@ -16,7 +16,7 @@ SELECT
     *
 FROM
     northwind.purchase_orders;
-# 4. Выберите только те строки из таблицы purchase_orders  где supplier_id = 2
+# 4. Выберите только те строки из таблицы purchase_orders, где supplier_id = 2
 SELECT 
     *
 FROM
@@ -55,8 +55,15 @@ SELECT
 FROM
     northwind.employees
 WHERE
-    last_name LIKE '%p%';
-# 8. Выберите все строки из таблицы orders там где нет информации о  shipper_id
+    last_name LIKE '%_p_%';
+# 7.1 То же самое, но чтобы не первая и не последняя буквы были.
+SELECT 
+    first_name
+FROM
+    northwind.employees
+WHERE
+    last_name LIKE '_%p%_';
+# 8. Выберите все строки из таблицы orders там, где нет информации о shipper_id
 SELECT 
     *
 FROM
