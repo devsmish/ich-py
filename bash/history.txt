@@ -1,54 +1,15 @@
-   0 pwd
-   1 cd /home
-   2 mkdir user1
-   3 mkdir user2
-   4 ls
-   5 cd user1
-   6 mkdir task1
-   7 ../
-   8 cd /home
-   9 cd user2
-  10 mkdir task2
-  11 cd task2
-  12 touch file2.txt
-  13 ls
-  14 cd /home/user1/task1
-  15 touch file1.txt
-  16 ls -la /home/user2/task2
-  17 pwd
-  18 cd /home
-  19 ls user1
-  20 mkdir -p user3/task3
-  21 cp /home/user2/task2/file2.txt user3/task3/file3.txt
-  22 ls -a /
-  23 ls -a /home
-  24 mkdir -p user4/task4
-  25 ls -a
-  26 touch /home/user4/task4/file4.txt
-  27 ls /home/user1/task1
-  28 ls /home/user2/task2
-  29 ls /home/user3/task3
-  30 ls /home/user4/task4
-  31 history
-  32 cp /home/user2/task2/file2.txt /tmp
-  33 ls /tmp/file2.txt
-  34 cp /home/user3/task3/file3.txt /tmp/newfile3.txt
-  35 ls /tmp
-  36 cp -r /home/user2 /tmp/mydirectory
-  37 ls /tmp
-  38 pwd
-  39 mkdir -p animals
-  40 mkdir -p /home/dogs
-  41 mkdir -p /home/cats
-  42 mkdir -p /home/fish
-  43 touch /home/dogs/pluto
-  44 touch /home/cats/garfield
-  45 touch /home/fish/nemo
-  46 touch /tmp/adam
-  47 mkdir -p /home/humans
-  48 cp /tmp/adam /home/humans
-  49 touch /tmp/evA
-  50 mv /tmp/evA /opt/eve
-  51 mv /opt/eve /home/humans
-  52 ls /home/humans
-  53 history > /tmp/history.txt &&export_file /tmp/history.txt
+   0 cd /home/
+   1 mkdir -p /home/animals/dogs
+   2 mkdir -p /home/animals/cats
+   3 mkdir -p /home/animals/fish
+   4 touch /home/animals/dogs/pluto
+   5 touch /home/animals/cats/garfield
+   6 touch /home/animals/fish/nemo
+   7 touch /tmp/adam
+   8 mkdir -p /home/humans && mv /tmp/adam /home/humans
+   9 touch /tmp/evA
+  10 mv /tmp/evA /opt/eve
+  11 mv /opt/eve /home/humans/eve
+  12 ls -al /home/humans/
+  13 history > tmp/history.txt && export_file /tmp/history.txt
+  14 history > /tmp/history.txt && export_file /tmp/history.txt
