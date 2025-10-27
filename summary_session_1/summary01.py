@@ -1,13 +1,25 @@
-original_print = print
-def custom_print(*args, **kwargs):
-     original_print("[LOG]:", *args, **kwargs)
-print = custom_print
-print("Это тестовый вывод")
+# print("hi")
+# text = "new text"
+# a = text + "!"
+# print("hi")
+# print(a)
+# # del print
+# # print("fsd")
+# new_print = print
+# print = 1
+# new_print("dsff")
 
-# определение типа данных
-print(type(7))
-print(type(2.5))
+# pr1 = 1
+# print(pr1)
+
+# print (  b  )
+print(type(1))
 print(type(""))
-print(type(True))
-print(type(print())) # тип аргумента функции print
-print(type(print))   # тип самой функции print
+print(type(print()))
+print(type(print))
+print(type(None))
+a = "address"
+b = "address"
+c = a
+
+print('''Это файл 'example.txt' ''')
