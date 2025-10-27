@@ -1,0 +1,10 @@
+   0 mkdir -p /home/user/start/
+   1 touch /home/user/start/1.txt
+   2  /home/user/start/1.txt
+   3 echo Start > /home/user/start/1.txt
+   4 date >> /home/user/start/1.txt
+   5 mkdir -p /opt/task/
+   6 cp /home/user/start/1.txt /opt/task/start.txt
+   7 ls -alh /
+   8 ls -alh | tail -n 4 >> /opt/task/start.txt
+   9 history > /home/homework2.txt && export_file /home/homework2.txt
