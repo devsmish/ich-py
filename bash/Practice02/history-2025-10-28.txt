@@ -1,0 +1,84 @@
+   0 cd /usr/local/bin/
+   1 cd 
+   2 ls -al
+   3 cd .wine/
+   4 ls -al
+   5 cd drive_c
+   6 cd
+   7 cd ..
+   8 cd
+   9 ls -al
+  10 cd /usr/local/bin/
+  11 cd ../sbin
+  12 ls -al /usr/local/
+  13 cd ../lib/
+  14 cd /
+  15 ls -al
+  16 cd var/
+  17 cd /
+  18 cd /var
+  19 cd /
+  20 cd
+  21 echo "Hello Linux!!" > /home/Hello
+  22 ls -al /home/
+  23 cat /home/Hello 
+  24 date >> /home/Hello
+  25 cat /home/Hello 
+  26 sed 's/eer/
+  27 '
+  28 sed 's/eer/
+  29 > file1
+  30 ls -al
+  31 > file2
+  32 > file3
+  33 ls -al
+  34 pwd
+  35 cd /
+  36 mkdir -p /home/anumals/dogs/pluto
+  37 ls -al /home/
+  38 tree /home/
+  39 rm -rf /home/anumals/
+  40 mkdir -p /home/anumals/dogs/
+  41 tree /home/
+  42 touch /home/anumals/dogs/pluto
+  43 tree /home/
+  44 ls -al /home/anumals/dogs/
+  45 mv /home/anumals/dogs/pluto /home/anumals/dogs/pluto.txt
+  46 tree /home/
+  47 cd 
+  48 mkdir Dir1.txt
+  49 ls -al
+  50 echo Text >> file1
+  51 cat file1
+  52 echo date >> file1
+  53 cat file
+  54 cat file1
+  55 date >> file1
+  56 cat file1
+  57 mkdir work
+  58 cd work/
+  59 echo "Hello, World!" > output.txt
+  60 echo "This is a practice file." >> output.txt 
+  61 df -h >> disk_space.txt
+  62 echo "This is a test line." >> output.txt 
+  63 cat output.txt | tail -3 >> last_lines.txt
+  64 cat last_lines.txt | wc -wlm > word_count.txt
+  65 cat /etc/passwd >> passwd_copy.txt 
+  66 head -10 passwd_copy.txt >> passwd_head_tail 
+  67 tail -4 passwd_copy.txt >> passwd_head_tail 
+  68 ls -al
+  69 cat disk_space.txt last_lines.txt output.txt passwd_copy.txt passwd_head_tail word_count.txt >> result.txt
+  70 ls -al
+  71 wc -l result.txt 
+  72 cat result.txt 
+  73 df 
+  74 clear
+  75 df 
+  76 df -h
+  77 wc --help
+  78 wc result.txt 
+  79 wc -l result.txt 
+  80 wc -w result.txt 
+  81 wc -c result.txt 
+  82 wc -m result.txt 
+  83 history >> history-2025-10-28
