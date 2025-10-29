@@ -12,3 +12,9 @@ age = int(input("Enter your age: "))
 favourite_color = input("Enter your favourite color: ")
 print("Меня зовут " + first_name + ", мне " + str(age) + " лет, и мой любимый цвет — " + favourite_color)
 print("Меня зовут", first_name, ", мне", age, "лет, и мой любимый цвет —", favourite_color)
+
+# альтернативный вариант
+name = input("Введите имя: ")
+age = input("Введите возраст: ")
+color = input("Введите любимый цвет: ")
+print("Меня зовут " + name + ", мне " + age + " лет, и мой любимый цвет — " + color + ".")

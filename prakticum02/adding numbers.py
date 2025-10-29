@@ -8,3 +8,10 @@ num1 = str(num)
 num2 = str(num1 + num1)
 num3 = str(num1 + num2)
 print("Значение выражения:", str(int(num1)+int(num2)+int(num3)))
+
+# альтернативный вариант
+n = input("Введите число: ")
+nn = n + n
+nnn = n + n + n
+result = int(n) + int(nn) + int(nnn)
+print("Значение выражения:", result)
