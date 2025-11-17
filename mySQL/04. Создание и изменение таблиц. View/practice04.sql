@@ -42,10 +42,7 @@ SET sql_safe_updates = 1;
 ● product_name — название продукта.
 ● category — категория продукта.
 ● stock_value — расчетная стоимость запасов (произведение price и stock_quantity).
-● stock_status — строка "Low Stock", если stock_quantity меньше 20, и "In Stock" в противном случае.
-5. Вам необходима таблица с данными о мониторинге основных показателей здоровья. Подумайте какие
-столбцы и с какими ограничениями вы будете использовать. Создайте такую таблицу и заполните ее тремя
-тестовыми строками. Обсудите результаты с коллегами.*/
+● stock_status — строка "Low Stock", если stock_quantity меньше 20, и "In Stock" в противном случае.*/
 CREATE VIEW product_overview AS
 SELECT 
 	product_name, 
@@ -53,3 +50,24 @@ SELECT
     price * stock_quantity AS stock_value, 
     IF (stock_quantity < 20, 'Low Stock', 'In Stock') AS stock_status 
 FROM products;
+
+-- 5. Вам необходима таблица с данными о мониторинге основных показателей здоровья. Подумайте какие столбцы и с какими ограничениями вы 
+-- будете использовать. Создайте такую таблицу и заполните ее тремя тестовыми строками. Обсудите результаты с коллегами.
+CREATE TABLE health_indicators (
+	id INT PRIMARY KEY AUTO_INCREMENT,
+    date_fix DATE NOT NULL,
+    height INT CHECK(height > 0),
+    weight DECIMAL(5, 2) CHECK(weight > 0),
+    age INT CHECK(age > 0),
+    pulse INT CHECK(pulse > 0),
+    blood_pressure VARCHAR(7),
+    body_temperature DECIMAL (4, 1) CHECK(body_temperature > 34 AND body_temperature < 43),
+    patient_id INT
+);
+SET sql_safe_updates = 0;
+INSERT INTO health_indicators(date_fix, height, weight, age, pulse, blood_pressure, body_temperature, patient_id)
+VALUES 
+	('2025-11-16', 187 , 102.4, 52, 110, '140/90', 36.6, 1234),
+    ('2025-11-16', 179, 90, 40, 97, '120/80', 36.7, 7 ),
+    ('2025-11-17', 160, 79, 25, 115, '150/100', 38.0, 9016);
+SET sql_safe_updates = 1;
