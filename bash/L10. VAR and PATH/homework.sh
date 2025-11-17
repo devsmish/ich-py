@@ -19,9 +19,9 @@ touch /opt/101025-ptm/SMyshynskyi/.process_management
 date >> /opt/101025-ptm/SMyshynskyi/.process_management
 echo "Welcome to Amazone server" >> /opt/101025-ptm/SMyshynskyi/.process_management
 free -m >> /opt/101025-ptm/SMyshynskyi/.process_management
-ps -ef | grep root >> /opt/101025-ptm/SMyshynskyi/.process_management
+ps -ef | grep root | grep -v grep | wc -l >> /opt/101025-ptm/SMyshynskyi/.process_management
 echo $SERGEY_VARIABLE >> /opt/101025-ptm/SMyshynskyi/.process_management
 ps -ef | grep "/usr/sbin/sshd -D" | grep -v grep | awk '{print "PID " $2 " PPID " $3}' >> /opt/101025-ptm/SMyshynskyi/.process_management
-unset $SERGEY_VARIABLE
+unset SERGEY_VARIABLE
 exit
 scp ec2-user@linux.itcareerhub.de:/opt/101025-ptm/SMyshynskyi/.process_management "E:/REPO"
