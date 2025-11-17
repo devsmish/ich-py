@@ -29,3 +29,37 @@ if len(text) < finish_index - start_index + 1:
     print(text[start_index:finish_index] + dop_simbol * "_")
 else:
     print(text[start_index:finish_index])
+
+'''3. Подсчёт символа
+Напишите программу, которая принимает строку и символ, а затем подсчитывает, сколько раз символ встречается в строке.
+Пример вывода:
+Введите строку: Hello, world!
+Введите символ: o
+Символ o встречается 2 раз(а).'''
+text = input("Enter your text: ")
+simbol = input("Enter your simbol: ")
+count_simbol = 0
+iterat = 0
+while  iterat < len(text):
+    if simbol == text[iterat]:
+        count_simbol += 1
+        iterat += 1
+    else:
+        iterat += 1
+print(f"Символ {simbol} встречается {count_simbol} раз(а).")
+
+'''4. Инвертирование строки без цифр
+Напишите программу, которая принимает строку и выводит её в обратном порядке, пропуская все цифры.
+Пример вывода:
+Введите строку: n52uFs6Inoh67ty8P
+Результат: PythonIsFun'''
+text = input("Enter any text: ")
+invert_text = ""
+iterat = 0
+while iterat < len(text):
+    if text[-iterat - 1] not in '0123456789':
+        invert_text += text[-iterat - 1]
+        iterat += 1
+    else:
+        iterat += 1
+print("Result:", invert_text)
