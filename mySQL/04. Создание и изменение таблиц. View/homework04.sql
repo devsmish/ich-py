@@ -44,7 +44,7 @@ WHERE wind_speed <= 3;
 
 SET sql_safe_updates = 1;
 
-DROP VIEW result_history_weather;
+-- DROP VIEW result_history_weather;
 
 CREATE VIEW result_history_weather AS
 SELECT *, 
