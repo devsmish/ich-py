@@ -1,0 +1,33 @@
+
+Filesystem                Size      Used Available Use% Mounted on
+/dev/root                 4.9G      2.3G      2.6G  47% /
+devtmpfs                 91.3M         0     91.3M   0% /dev
+#!/bin/bash
+
+USER=Serhii
+
+echo "$PWD"
+   0 cd /tmp/
+   1 nano file.txt
+   2 ls -la
+   3 df -h | head -n 3 >> file.txt
+   4 cat file.txt
+   5 chmod g+wx file.txt
+   6 ls -la
+   7 chmod o-rwx
+   8 chmod o-rwx file.txt
+   9 touch myfirstbashscript.sh
+  10 chmod +x myfirstbashscript.sh 
+  11 nano myfirstbashscript.sh 
+  12 ./myfirstbashscript.sh 
+  13 ls -la
+  14 nano myfirstbashscript.sh 
+  15 ./myfirstbashscript.sh 
+  16 nano myfirstbashscript.sh 
+  17 ./myfirstbashscript.sh 
+  18 bash myfirstbashscript.sh 
+  19 nano myfirstbashscript.sh 
+  20 bash myfirstbashscript.sh 
+  21 cat myfirstbashscript.sh >> file.txt 
+  22 cat file.txt 
+  23 history >> file.txt && export_file file.txt
