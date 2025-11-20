@@ -1,0 +1,32 @@
+git config
+git config --list
+git config --global user.name "Ваше имя"
+git config --global user.email "ваш@адрес.почты"
+
+git init
+
+git clone <repo url>
+
+git add <file>
+git add .
+
+git commit -m "Комментарий к коммиту"
+
+git remote -v
+
+git push <remote> <branch>
+
+git pull <remote> <branch>
+
+# Задание
+# Создать репозиторий в github, добавить, закоммитить и пушить в него из нового локального репозитория.
+git init
+echo "# test" >> README.md
+git status
+git add <files> или git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin git@github.com:USERNAME/REPO_NAME.git
+git push -u origin main
+git log
+
