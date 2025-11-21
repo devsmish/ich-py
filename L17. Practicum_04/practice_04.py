@@ -96,6 +96,14 @@ print("Скобки расставлены правильно?", balance == 0)
 Пример вывода:
 Введите строку: Hello!
 Минимальный символ: !'''
+text = input("Enter any text: ")
+min_simbol = 127
+for char in text:
+    if ord(char) <= min_simbol:
+        min_simbol = ord(char)
+    else:
+        min_simbol = ord(char)
+print("Минимальный символ:", chr(min_simbol))
 
 '''6. Четные и нечетные цифры
 Напишите программу, которая принимает одно число и формирует из его цифр два новых числа: одно из
@@ -108,6 +116,20 @@ print("Скобки расставлены правильно?", balance == 0)
 Введите число: 482262
 Число из четных цифр: 482262
 Число из нечетных цифр: 0'''
+nummer = input("Enter any number: ")
+even  = ''
+odd = ''
+for char in nummer:
+    if int(char) % 2 == 0:
+        even = even + char
+    else:
+        odd = odd + char
+if even == '':
+    even = '0'
+if odd == '':
+    odd = '0'
+print("Число из четных цифр:", even)
+print("Число из нечетных цифр:", odd)
 
 '''7. Строка из диапазона Unicode
 Напишите программу, которая принимает два числа (начало и конец диапазона Unicode) и выводит строку,
@@ -131,6 +153,18 @@ print("Символы:", res)
 Слово: Программирование, Длина: 16
 Слово: это, Длина: 3
 Слово: весело, Длина: 6'''
+text = input("Enter any text: ")
+ind = len(text)
+j = 0
+for i in range(ind):
+    word = ''
+    if text[i] == " ":
+        word += text[j:i]
+        j = i + 1
+        print("Слово:", word, "Длина:", len(word))
+    elif i == (ind - 1) and text[-1] != ' ':
+        word += text[j:ind]
+        print("Слово:", word, "Длина:", len(word))
 
 '''9. Текст палиндром
 Напишите программу, которая принимает строку и проверяет, является ли она палиндромом, игнорируя всё
@@ -177,6 +211,18 @@ else:
 Пример вывода:
 Введите строку: The quick brown fox jumps over the lazy dog
 Содержит все буквы алфавита? True'''
+text = input("Enter any text: ")
+count_letter = 0
+for i in range(65, 91):
+    simbol = chr(i)
+    if simbol.lower() in text or simbol.upper() in text:
+        count_letter += 1
+    else:
+        continue
+if count_letter == 26:
+    print("Содержит все буквы алфавита? True")
+else:
+    print("Содержит все буквы алфавита? False")
 
 '''11. Сравнение строк на уникальность
 Напишите программу, которая принимает две строки и сравнивает в какой из них больше уникальных
@@ -185,6 +231,22 @@ else:
 Введите первую строку: Python
 Введите вторую строку: JavaJava
 Больше уникальных символов в строке: Python'''
+text1 = input("Enter any text: ")
+text2 = input("Enter any text: ")
+uniq_let1 = 0
+uniq_let2 = 0
+for i in range(65, 91):
+    simbol = chr(i)
+    if simbol.lower() in text1 or simbol.upper() in text1:
+        uniq_let1 += 1
+    if simbol.lower() in text2 or simbol.upper() in text2:
+        uniq_let2 += 1
+if uniq_let1 > uniq_let2:
+    print("Больше уникальных символов в строке:", text1)
+elif uniq_let2 > uniq_let1:
+    print("Больше уникальных символов в строке:", text2)
+else:
+    print("В строках одинаковое количество уникальных символов!")
 
 '''12. Счётчик символов
 Напишите программу, которая принимает строку и подсчитывает количество английских букв, цифр и
@@ -194,6 +256,18 @@ else:
 Букв: 6
 Цифр: 3
 Остальных символов: 3'''
+text = input("Введите строку: ")
+count_letter = count_digit = count_other = 0
+for char in text:
+    if "0" <= char <= "9":
+        count_digit += 1
+    elif "A" <= char <= "Z" or "a" <= char <= "z":
+        count_letter += 1
+    else:
+        count_other += 1
+print("Букв:", count_letter)
+print("Цифр:", count_digit)
+print("Остальных символов:", count_other)
 
 '''13. Одинаковый сдвиг
 Напишите программу, которая проверяет, имеют ли две строки одинаковые сдвиги между парами символов в
@@ -202,3 +276,19 @@ else:
 Введите первую строку: acc
 Введите вторую строку: egg
 Одинаковый сдвиг? True'''
+first_text = input("Введите первую строку: ")
+second_text = input("Введите вторую строку: ")
+len1 = len(first_text)
+len2 = len(second_text)
+if len1 < len2:
+    limit = len1
+else:
+    limit = len2
+res = True
+for i in range(limit - 1):
+    shift1 = ord(first_text[i + 1]) - ord(first_text[i])
+    shift2 = ord(second_text[i + 1]) - ord(second_text[i])
+    if shift1 != shift2:
+        res = False
+        break
+print("Одинаковый сдвиг?", res)
