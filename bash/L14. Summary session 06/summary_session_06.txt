@@ -19,6 +19,7 @@ chmod 700 TestDir
 # В созданный репозиторий в github с названием git_intro добавить еще одну картинку или фото,
 # локально инициализировав репозиторий и соединив удаленный и локальный репозитории.
 Копируем файл в директорию:
-git add ИМЯ ФАЙЛА
-git commit -m "Added photo"
+git add scalable-vector-graphics-python-logo-png.webp
+git commit -m "Added png logo python"
 git push
+git push --set-upstream origin main
