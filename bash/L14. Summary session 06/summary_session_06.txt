@@ -23,3 +23,8 @@ git add scalable-vector-graphics-python-logo-png.webp
 git commit -m "Added png logo python"
 git push
 git push --set-upstream origin main
+
+# Создание общего git репозитория на внешнем сервере
+cd /opt/101025-ptm/VAndreev/Test/
+git init --bare
+git remote add server ssh://ec2-user@linux.itcareerhub.de:/opt/101025-ptm/VAndreev/Test/
