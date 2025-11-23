@@ -23,10 +23,12 @@ names = ["John", "Bob", "Alice", "Anna", "Mark"]
 Alice'''
 names = ["John", "Bob", "Alice", "Anna", "Mark"]
 avg_longnames = 0
-longnames = []
+longnames = ''
+count_names = 0
 for name in names:
-    avg_longnames = (avg_longnames + len(name))/len(names)
+    avg_longnames = avg_longnames + len(name)
+    count_names += 1
     if (len(name) > len(longnames)):
-        longnames = longnames + name
-print("Средняя длина имён:", avg_longnames)
+        longnames = name
+print("Средняя длина имён:", avg_longnames/count_names)
 print("Имена длиннее средней длины:", longnames)
