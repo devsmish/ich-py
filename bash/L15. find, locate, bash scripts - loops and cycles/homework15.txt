@@ -1,0 +1,39 @@
+1. Работаем в JSLinux.
+2. Создать файл myfirstbashscript.sh где угодно.
+3. Сделать его исполняемым.
+4. Завести новую переменную USER и присвойте ей ваше имя в качестве значения.
+5. Добавить в скрипт все необходимое, чтобы он:
+○ Написал дату
+○ Поприветствовал Вас по имени (hello $USER!)
+○ Написал, из какой директории он работает
+○ Добавил количество процессов с именем bioset одним числом (не учитывая процесс
+grep)
+○ Вывел права на файл /etc/passwd в формате (-rw-r--r--) - и только эту часть
+(потребуется awk)
+6. Экспортируйте и пришлите результирующий файл в формате txt.
+
+cd /home/
+touch myfirstbashscript.sh
+chmod +x myfirstbashscript.sh
+nano -l myfirstbashscript.sh
+
+скрипт
+#!/bin/bash
+
+USER=Serhii
+
+echo "Current date: $(date)"
+
+echo "Hello $USER!"
+
+echo "Рабочая директория: $PWD"
+
+bioset_count=$(ps aux | grep 'bioset' | grep -v grep | wc -l)
+echo "количество процессов bioset равно: $bioset_count"
+
+permissions=$(ls -l /etc/passwd | awk '{print $1}')
+echo "$permissions"
+
+./myfirstbashscript.sh
+cp myfirstbashscript.sh myfirstbashscript.txt
+export_file myfirstbashscript.txt
