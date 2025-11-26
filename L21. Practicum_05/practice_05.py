@@ -251,12 +251,13 @@ print(correkt_text)
 Пример вывода: Строка: Banana bAnana baNAna Подстрока: ban Позиция: 0 Позиция:
 7 Позиция: 14'''
 text = input("Enter any text: ")
-little_str = input("Enter any text: ")
-position = 0
-tmp_text = ''
-i = 0
-while i < len(text):
-    position = text.find(little_str)
-    i = position + 1
+sub_str = input("Enter any text: ")
+position = start = 0
+text_low = text.lower()
+str_low = sub_str.lower()
+while True:
+    position = text_low.find(str_low, start)
+    if position == -1:
+        break
+    start = position + 1
     print("Позиция:", position)
-
