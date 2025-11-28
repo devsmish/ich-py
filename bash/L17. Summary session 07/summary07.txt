@@ -1,0 +1,8 @@
+Скрипт ряда Фибоначчи
+./bench.py
+
+#!/bin/bash
+
+('fib(', 25, ')= ', 75025)
+
+./bench.py >> output.txt
