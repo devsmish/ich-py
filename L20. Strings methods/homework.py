@@ -1,6 +1,8 @@
 '''1. Звёздочки вместо чисел
 Напишите программу, которая заменяет все цифры в строке на звёздочки *.
 text = "My number is 123-456-789"'''
+from itertools import count
+
 text = "My number is 123-456-789"
 new_text = ''
 for letter in text:
