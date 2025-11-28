@@ -27,10 +27,10 @@ ON orders.id = invoices.order_id
 WHERE invoices.order_id IS NOT NULL; -- в таблице инвойсов нет пустых значений, поэтому это условие можно было и не добавлять
 
 -- 5. Подсчитайте количество инвойсов для каждого клиента из предыдущего запроса.
-SELECT customers.id, customers.last_name, customers.first_name, COUNT(invoices.invoice_date) as count_inv from orders
+SELECT customers.last_name, COUNT(invoices.invoice_date) as count_inv from orders
 LEFT JOIN customers
 ON orders.customer_id = customers.id
 RIGHT JOIN invoices
 ON orders.id = invoices.order_id
 WHERE invoices.order_id IS NOT NULL
-GROUP BY customers.id, customers.last_name;
+GROUP BY customers.last_name;
