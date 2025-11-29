@@ -1,4 +1,4 @@
--- 1 В ыведите одним запросом с использованием UNION столбцы id, employee_id из таблицы orders и соответствующие им столбцы из таблицы purchase_orders 
+-- 1 Выведите одним запросом с использованием UNION столбцы id, employee_id из таблицы orders и соответствующие им столбцы из таблицы purchase_orders
 -- В таблице purchase_orders created_by соответствует employee_id
 
 SELECT id, employee_id as new_name FROM orders
