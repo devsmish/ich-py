@@ -1,14 +1,11 @@
-data_list = [
- "John 23 12345.678",
- "Alice 30 200.50",
- "Bob 35 15000.3",
- "Charlie 40 500.75"]
-for item in data_list:
-    item_list = item.split()
-    for i in range(len(item_list)):
-        name = item_list[i]
-        age = item_list[i + 1]
-        balance = item_list[i + 2]
-        break
-    text = f'''Имя: {name:<8} | Возраст: {age:<3} | Баланс: {balance:<10}'''
-    print(text)
+text = input("Enter your text: ")
+tmp_text = ''
+count = 0
+for char in text:
+    if char.lower() not in tmp_text and char != ' ':
+        tmp_text += char.lower()
+        count += 1
+if count == 26:
+    print("Панограмма? True")
+else:
+    print("Панограмма? False")
