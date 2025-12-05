@@ -10,7 +10,15 @@ uniq_num = []
 for index, value in enumerate(numbers):
     if value not in uniq_num:
         uniq_num = uniq_num + list([value])
-print(uniq_num)
+print("Уникальные элементы:", uniq_num)
+
+# Another variant
+numbers = (1, 2, 3, 2, 1, 4, 5, 3, 6)
+uniq = ()
+for n in numbers:
+    if n not in uniq:
+        uniq += (n,)
+print("Уникальные элементы: ", uniq)
 
 '''2. Кортеж выше среднего
 Напишите программу, которая обрабатывает кортеж чисел. Программа должна вернуть кортеж, состоящий из элементов, которые 
