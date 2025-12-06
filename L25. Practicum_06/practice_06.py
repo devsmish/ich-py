@@ -227,3 +227,46 @@ participants = [
 -------------------------------------------------------------------------
 Общее количество участников: 5
 Среднее время завершения: 29 мин 25.97 сек'''
+participants = [
+ ("Иван", "Иванов", "Бег на 100м", 1, (0, 9.58)),
+ ("Мария", "Петрова", "Плавание", 2, (1, 2.34)),
+ ("Сергей", "Сидоров", "Велогонка", 3, (25, 15.10)),
+ ("Анна", "Смирнова", "Марафон", 1, (120, 34.56)),
+ ("Дмитрий", "Ковалёв", "Прыжки в длину", 4, (0, 8.25))
+]
+first_place = "Поздравляем с победой!"
+second_place = "Отличный результат!"
+third_place = "Вы заняли призовое место!"
+other_place = "Удачи в следующий раз!"
+time_list = []
+count = 0
+for first_name, last_name, discipline, place, time in participants:
+    time_list = time_list + [time,]
+    count += 1
+    if place == 1:
+        print(f"{first_name} {last_name}, спасибо за участие в {discipline}! {first_place}")
+    elif place == 2:
+        print(f"{first_name} {last_name}, спасибо за участие в {discipline}! {second_place}")
+    elif place == 3:
+        print(f"{first_name} {last_name}, спасибо за участие в {discipline}! {third_place}")
+    else:
+        print(f"{first_name} {last_name}, спасибо за участие в {discipline}! {other_place}")
+print("ОТЧЁТ ПО МЕРОПРИЯТИЮ:")
+print(f"{"Имя":<13} {"Фамилия":<15} {"Вид спорта":<19} {"Место":>6} {"Время завершения":>19}")
+print("-" * 76)
+mnt = 0
+scd = 0
+for first_name, last_name, discipline, place, time in participants:
+    for minutes, seconds in time_list:
+        time_str = f"{minutes}:{seconds}"
+        print(f"{first_name:<13} {last_name:<15} {discipline:<19} {place:>6} {time_str:>19}")
+        mnt = mnt + minutes
+        scd = scd + seconds
+        time_list.remove((minutes, seconds))
+        break
+print("-" * 76)
+print(f"Общее количество участников: {count:>47}")
+res_min = int((mnt * 60 + scd) // (count * 60))
+res_sec = round((((mnt * 60 + scd) / 5) % 60),2)
+time_str = f"{res_min} мин {res_sec} сек"
+print(f"Среднее время завершения: {time_str:>50}")
