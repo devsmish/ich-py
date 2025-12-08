@@ -8,7 +8,7 @@ strings = ["apple", "banana", "level", "radar", "grape"]
 new_list = []
 for i in range(len(strings)):
     if strings[i][0] == strings[i][-1]:
-        new_list += [strings[i]]
+        new_list.append(strings[i])
 print(new_list)
 
 '''2. Слова с гласных
