@@ -198,23 +198,103 @@
 # fruits.reverse()
 # print(fruits)
 
-# Сортировка списка чисел
-numbers = [3, 1, 4, 1, 5]
-sorted_numbers = sorted(numbers)
-print(sorted_numbers)
-print(numbers)
+# # Сортировка списка чисел
+# numbers = [3, 1, 4, 1, 5]
+# sorted_numbers = sorted(numbers)
+# print(sorted_numbers)
+# print(numbers)
 
-# Сортировка строки
-letters = "bca"
-sorted_letters = sorted(letters)
-# Вернет отсортированные символы по отдельности
-print(sorted_letters)
-print(letters)
+# # Сортировка строки
+# letters = "bca"
+# sorted_letters = sorted(letters)
+# # Вернет отсортированные символы по отдельности
+# print(sorted_letters)
+# print(letters)
+#
+# # Сортировка кортежа по длине строк в порядке убывания
+# words = ("apple", "banana", "kiwi")
+# sorted_words = sorted(words, key=len, reverse=True)
+# print(sorted_words)
+# print(words)
 
-# Сортировка кортежа по длине строк в порядке убывания
-words = ("apple", "banana", "kiwi")
-sorted_words = sorted(words, key=len, reverse=True)
-print(sorted_words)
-print(words)
+
+# # Разворот списка
+# numbers = [3, 1, 4, 1, 5]
+# reversed_numbers = reversed(numbers)  # возвращает не list, а list_reverseiterator
+# print(type(reversed_numbers))
+# print(reversed_numbers)
+# list_reversed_numbers = list(reversed_numbers)
+# # чтобы увидеть элементы, нужно преобразовать в list
+# print(list_reversed_numbers)
+# for el in reversed_numbers:
+#     print(el)
+
+# for _ in range(2):
+#     # reversed_numbers[_]  # not subscriptable
+#     print(reversed_numbers.__next__())
+# print()
+#
+# list_reversed_numbers = list(reversed_numbers)
+# # чтобы увидеть элементы, нужно преобразовать в list
+# print(list_reversed_numbers)
+
+
+# # Разворот строки
+# word = "hello"
+# reversed_letters = reversed(word)
+# print(reversed_letters)
+# reversed_word = ''.join(reversed_letters)
+# print(reversed_word)
+
+
+
+# # Поиск минимального/максимального значения в списке
+# numbers = [4, 1, 7, 2, 9]
+# print(min(numbers))
+# print(max(numbers))
+#
+# # Поиск минимального/максимального значения среди отдельных аргументов
+# print(min(3, 5, 2, 8))
+# print(max(3, 5, 2, 8))
+
+# # Поиск минимального/максимального символа
+# chars = "Python"
+# print(min(chars))
+# print(max(chars))
+
+# Использование параметра key для поиска по длине строк
+# words = ["banana", "apple", "kiwi", "grape"]
+# print(min(words))
+# print(min(words, key=len))
+# print(max(words, key=len))
+
+# min_word = words[0]
+# # lexical
+# for el in words:
+#     if el < min_word:
+#         min_word = el
+# print(min_word)
+#
+# min_word = words[0]
+# # len
+# for el in words:
+#     if len(el) < len(min_word):
+#         min_word = el
+# print(min_word)
+
+
+# Сумма чисел в списке
+numbers = [4, 1, 7, 2, 9]
+total_sum = sum(numbers)
+print(total_sum)
+
+# Сумма чисел в списке с начальным значением
+total_sum_with_start = sum(numbers, 1000)
+print(total_sum_with_start)
+
+# Сумма чисел в кортеже
+numbers_tuple = (1, 2, 3)
+total_sum_tuple = sum(numbers_tuple)
+print(total_sum_tuple)
 
 
