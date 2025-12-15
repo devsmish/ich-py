@@ -218,6 +218,16 @@ employees = [
  ("Alice", ["Review documents", "Call clients"]),
  ("Bob", ["Check emails"]),
  ("Charlie", ["Organize meeting"])]'''
+employees = [
+ ("Alice", ["Review documents", "Call clients"]),
+ ("Bob", ["Check emails"]),
+ ("Charlie", ["Organize meeting"])]
+for name, tasks_list in employees:
+    if name == "Alice":
+        tasks_list.append("Prepare presentation")
+        print(f"{name} had her tasks: {tasks_list}")
+        break
+print(employees)
 
 '''10. Перестановка элементов
 Дан список проектов, где каждый элемент — это кортеж с названием проекта и списком сотрудников.
@@ -226,17 +236,62 @@ employees = [
 projects = [
  ("Project A", ["Alice", "Bob", "Charlie"]),
  ("Project B", ["Diana", "Eve"])]'''
+projects = [
+ ("Project A", ["Alice", "Bob", "Charlie"]),
+ ("Project B", ["Diana", "Eve"])]
+for project_name, employees_list in projects:
+    for i in range(len(employees_list)):
+        if employees_list[i] == "Alice":
+            employees_list[i] = "Bob"
+        elif employees_list[i] == "Bob":
+            employees_list[i] = "Alice"
+print(projects)
 
 '''11. Приходы и расходы
 В списке кортежей, где каждый кортеж символизирует запись о приходах и расходах, необходимо оставить только те записи, в 
 которых общий баланс не уходит в минус (сумма элементов кортежа должна быть больше или равна нулю). Необходимо изменить 
 исходный список, а не создать новый. Данные:
 transactions = [(100, -50, -30), (-200, 100, 50), (300, -100, -50), (-50, -50), (200, -300, 150)]'''
+transactions = [(100, -50, -30), (-200, 100, 50), (300, -100, -50), (-50, -50), (200, -300, 150)]
+for i in range(len(transactions) - 1, -1, -1):
+    if sum(transactions[i]) < 0:
+        transactions.remove(transactions[i])
+print(transactions)
 
 '''12. Последовательность цифр
 Напишите программу, которая проверяет, находятся ли цифры, введённые пользователем, в заданном списке строк в указанном 
 порядке. Данные:
 my_list = ["3", "6", "3", "2", "9", "3", "9", "4", "3", "9", "0"]'''
+my_list = ["3", "6", "3", "2", "9", "3", "9", "4", "3", "9", "0"]
+user_list = []
+
+# ввод
+while True:
+    digit = input("Enter a digit (Enter для выхода): ")
+    if digit == "":
+        break
+    user_list.append(digit)
+
+last_index = -1  # последний найденный индекс в my_list
+
+for digit in user_list:
+    if digit not in my_list:
+        print(f"Числа {digit} нет в списке!")
+        break
+
+    # ищем первое вхождение справа от last_index
+    found = False
+    for i in range(last_index + 1, len(my_list)):
+        if my_list[i] == digit:
+            last_index = i
+            found = True
+            break
+
+    if not found:
+        print("Числа не в той последовательности")
+        break
+else:
+    print("Числа в правильной последовательности")
 
 '''13. Зашифрованное послание
 Есть строка с зашифрованным посланием. Всё, что было приложено к этой строке - это небольшой набор слов: 
@@ -247,3 +302,71 @@ my_list = ["3", "6", "3", "2", "9", "3", "9", "4", "3", "9", "0"]'''
 message = "92 114 120 35 102 100 113 35 103 114 35 108 119 36 35 92 114 120 35 100 117 104
 35 106 117 104 100 119 35 100 113 103 35 76 35 101 104 111 108 104 121 104 35 108 113 35 124
 114 120 36"'''
+message = "92 114 120 35 102 100 113 35 103 114 35 108 119 36 35 92 114 120 35 100 117 104 35 106 117 104 100 119 35 100 113 103 35 76 35 101 104 111 108 104 121 104 35 108 113 35 124 114 120 36"
+
+codes = message.split()
+text = ""
+
+# 1. Числа → символы
+for code in codes:
+    text += chr(int(code))
+
+# 2. Из подсказки знаем: сдвиг = 3
+plain_word = "caesar"
+cipher_word = "fdhvdu"
+shift = ord(cipher_word[0]) - ord(plain_word[0])
+
+for i in range(len(plain_word)):
+    if ord(cipher_word[i]) - ord(plain_word[i]) != shift:
+        print("Это не шифр Цезаря")
+        break
+else:
+    print("Сдвиг найден:", shift)
+
+decrypted = ""
+
+# 3. Расшифровка
+for ch in text:
+    if 'a' <= ch <= 'z':
+        decrypted += chr((ord(ch) - ord('a') - shift) % 26 + ord('a'))
+    elif 'A' <= ch <= 'Z':
+        decrypted += chr((ord(ch) - ord('A') - shift) % 26 + ord('A'))
+    else:
+        decrypted += ch
+
+# 4. Вывод
+print("Сдвиг:", shift)
+print("Сообщение:")
+print(decrypted)
+
+# Вариант с перебором всех сдвигов от 0 до 26 (логика %26 - зацикливание диапазона поиска)
+message = "92 114 120 35 102 100 113 35 103 114 35 108 119 36 35 92 114 120 35 100 117 104 35 106 117 104 100 119 35 100 113 103 35 76 35 101 104 111 108 104 121 104 35 108 113 35 124 114 120 36"
+codes = message.split()
+text = ""
+
+for code in codes:
+    text += chr(int(code))
+
+print(text)
+for shift in range(1, 26):
+    decrypted = ""
+
+    for ch in text:
+        # маленькие буквы
+        if 'a' <= ch <= 'z':
+            decrypted += chr((ord(ch) - ord('a') - shift) % 26 + ord('a'))
+
+        # большие буквы
+        elif 'A' <= ch <= 'Z':
+            decrypted += chr((ord(ch) - ord('A') - shift) % 26 + ord('A'))
+
+        # остальные символы не трогаем
+        else:
+            decrypted += ch
+
+    # проверка осмысленности
+    if "ave caesar" in decrypted.lower():
+        print("Сдвиг:", shift)
+        print("Сообщение:")
+        print(decrypted)
+        break
