@@ -6,11 +6,12 @@ text_list = ["Hello", "Python Programming", "World", "Advanced Topics", "Simple"
 Пример вывода:
 Обработанный список: ['hello', 'world', 'simple']'''
 text_list = ["Hello", "Python Programming", "World", "Advanced Topics", "Simple"]
-processed_list = []
-for item in text_list:
-    if " " not in item:
-        processed_list.append(item.lower())
-print("Обработанный список:", processed_list)
+for i in range(len(text_list) - 1, -1, -1):
+    if " " in text_list[i]:
+        text_list.remove(text_list[i])
+    else:
+        text_list[i] = text_list[i].lower()
+print("Обработанный список:", text_list)
 
 '''2. Обновление цен товаров
 Дан список товаров с ценами. Программа должна применить скидку к каждому товару и добавить в список
