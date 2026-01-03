@@ -1,0 +1,25 @@
+# --- PyCharm ---
+.idea/
+*.iml
+
+# --- Python ---
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# Виртуальные окружения
+venv/
+.venv/
+env/
+
+# Логи и временные файлы
+*.log
+*.tmp
+
+# Jupyter
+.ipynb_checkpoints/
+
+# OS
+.DS_Store
+Thumbs.db
