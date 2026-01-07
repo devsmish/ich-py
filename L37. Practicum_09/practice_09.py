@@ -205,6 +205,20 @@ students = {
 Пример вывода:
 Группа с предметами: Physics, Math: ['Alice', 'Bob', 'David']
 Группа с предметами: Biology, Chemistry: ['Charlie', 'Eve']'''
+students = {
+ "Alice": ["Math", "Physics"],
+ "Bob": ["Math", "Physics"],
+ "Charlie": ["Chemistry", "Biology"],
+ "David": ["Math", "Physics"],
+ "Eve": ["Chemistry", "Biology"]
+}
+subj_group = {}
+for student, subjects in students.items():
+    key_subject = frozenset(subjects)
+    subj_group.setdefault(key_subject, []).append(student)
+for subject, student in subj_group.items():
+    subjects_str = ", ".join(sorted(subject))
+    print(f"Группа с предметами: {subjects_str}: {student}")
 
 '''10. Перевод и расширение словаря
 Напишите программу, которая позволяет пользователю вводить английские слова и получать их перевод на русский из словаря. 
@@ -227,3 +241,25 @@ english_words = {
 Слово "Travel" добавлено в словарь.
 Введите слово на английском (или 'exit' для выхода): exit
 Программа завершена.'''
+english_words = {
+ "Butterfly": "Бабочка",
+ "Training": "Обучение",
+ "Restaurant": "Ресторан",
+ "Programming": "Программирование",
+}
+while True:
+    word = input("Введите слово на английском (или 'exit' для выхода): ").capitalize()
+    if word == "exit".capitalize():
+        print("Программа завершена.")
+        break
+    if word in english_words:
+        print("Перевод:", english_words[word])
+    else:
+        print("Перевод отсутствует.")
+        question = input("Хотите добавить перевод? (да/нет):")
+        if question == question.strip().lower():
+            continue
+        else:
+            translate = input(f'Введите перевод для слова "{word}": ')
+            english_words[word] = translate
+print("Обновленный словарь:", english_words)
