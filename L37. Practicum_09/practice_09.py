@@ -257,7 +257,7 @@ while True:
     else:
         print("Перевод отсутствует.")
         question = input("Хотите добавить перевод? (да/нет):")
-        if question == question.strip().lower():
+        if question == 'нет'.strip().lower():
             continue
         else:
             translate = input(f'Введите перевод для слова "{word}": ')
