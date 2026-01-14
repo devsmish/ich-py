@@ -302,3 +302,29 @@ queue_size = 4
 
 result = lru_queue(tasks, new_tasks, queue_size)
 print(f"Очередь из {queue_size} задач: {result}")
+
+# Another variant
+def lru_queue(tasks, max_size, *new_tasks):
+    queue = tasks.copy()
+
+    for task in new_tasks:
+        if task in queue:
+            queue.remove(task)
+
+        queue.append(task)
+        queue.pop(0)
+
+        if len(queue) > max_size:
+            queue.pop(0)
+
+    return queue
+
+tasks = ["task1", "task2", "task3", "task4", "task5", "task6"]
+new1 = "task4"
+new2 = "task1"
+new3 = "task7"
+new4 = "task2"
+max_size = 4
+
+result = lru_queue(tasks, max_size, new1, new2, new3, new4)
+print(f"Очередь из {max_size} задач: {result}")
