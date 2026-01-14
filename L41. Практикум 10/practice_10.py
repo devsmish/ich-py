@@ -231,6 +231,17 @@ words = ["apple", "banana", "kiwi", "grape", "orange", "peach"]
 5: ['apple', 'grape', 'peach']
 6: ['banana', 'orange']
 4: ['kiwi']'''
+from collections import defaultdict
+
+def group_len_words(words):
+    len_words = defaultdict(list)
+    for word in words:
+        len_words[len(word)].append(word)
+    return len_words
+
+words = ["apple", "banana", "kiwi", "grape", "orange", "peach"]
+
+print(f"Слова по длине:\n{dict(group_len_words(words))}")
 
 '''7. Создание глобального счётчика
 Создайте функцию increment_counter, которая использует глобальную переменную counter для подсчёта
@@ -241,9 +252,19 @@ increment_counter()
 print(counter)
 Пример вывода:
 Вызовов функции: 2'''
+counter = 0
+
+def increment_counter():
+    global counter
+    counter += 1
+
+increment_counter()
+increment_counter()
+
+print(f"Вызовов функции: {counter}")
 
 '''8. Очередь с LRU-кэшированием
-Реализуйте функцию, которая поддерживает механизм LRUкэша для очереди задач. Функция должна
+Реализуйте функцию, которая поддерживает механизм LRU-кэша для очереди задач. Функция должна
 принимать:
 ● Текущую очередь задач.
 ● Новые задачи для добавления.
@@ -256,16 +277,28 @@ new2 = "task1"
 new3 = "task7"
 new4 = "task2"
 Пример вывода:
-Очередь из 4 новых задач: ['task4', 'task1', 'task7', 'task2']
-Данные:
-recipes = {
- ("flour", "egg", "milk"): "Pancakes",
- ("egg", "milk", "butter"): "Omelette",
- ("flour", "sugar", "butter"): "Cookies",
- ("flour", "egg", "butter", "sugar"): "Cake",
- ("milk", "flour", "egg"): "Waffles",
- ("butter", "milk", "egg"): "Scrambled Eggs",
- ("flour", "milk", "sugar", "butter"): "Sweet Bread"
-}
-Пример вывода:
-milk egg butter flour'''
+Очередь из 4 новых задач: ['task4', 'task1', 'task7', 'task2']'''
+def lru_queue(tasks, new_tasks, max_size):
+    queue = tasks.copy()  # чтобы не портить исходный список
+
+    for task in new_tasks:
+        # если задача уже есть — считаем её использованной
+        if task in queue:
+            queue.remove(task)
+
+        # добавляем как самую свежую
+        queue.append(task)
+        queue.pop(0)
+
+        # если превышен лимит — удаляем самую старую
+        if len(queue) > max_size:
+            queue.pop(0)
+
+    return queue
+
+tasks = ["task1", "task2", "task3", "task4", "task5", "task6"]
+new_tasks = ["task4", "task1", "task7", "task2"]
+queue_size = 4
+
+result = lru_queue(tasks, new_tasks, queue_size)
+print(f"Очередь из {queue_size} задач: {result}")
