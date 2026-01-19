@@ -21,9 +21,21 @@ dict2 = {"a": 1, "b": 2, "c": 3}
 Первый словарь является подмножеством второго.'''
 dict1 = {"a": 1, "b": 2}
 dict2 = {"a": 1, "b": 2, "c": 3}
-set1 = set(dict1)
-set2 = set(dict2)
-if set1 <= set2:
+subset = True
+for key in dict1:
+    if key not in dict2 or dict1[key] != dict2[key]:
+        subset = False
+        break
+if subset:
     print("Первый словарь является подмножеством второго.")
 else:
     print("Первый словарь не является подмножеством второго.")
+subset = True
+for key in dict2:
+    if key not in dict1 or dict2[key] != dict1[key]:
+        subset = False
+        break
+if subset:
+    print("Второй словарь является подмножеством первого.")
+else:
+    print("Второй словарь не является подмножеством первого.")
