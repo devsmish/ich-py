@@ -41,7 +41,7 @@ for item in data_list:
     for i in range(len(item_list)):
         name = item_list[i]
         age = item_list[i + 1]
-        balance = item_list[i + 2]
+        balance = float(item_list[i + 2])
         break
-    text = f'''Имя: {name:<10} | Возраст: {age:<3} | Баланс: {balance:<10}'''
+    text = f'''Имя: {name:>10} | Возраст: {age:>3} | Баланс: {balance:>10.2f}'''
     print(text)
