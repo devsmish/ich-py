@@ -118,6 +118,10 @@ words = ["apple", "banana", "kiwi", "grape"]
 print(sort_by_length(words))
 Пример вывода:
 ['kiwi', 'grape', 'apple', 'banana']'''
+words = ["apple", "banana", "kiwi", "grape"]
+def sort_by_length(words: list[str]) -> list[str]:
+    return sorted(words, key=len)
+print(sort_by_length(words))
 
 '''5. Очередь с ограничением времени
 Реализуйте функцию, которая принимает очередь задач с указанием времени их выполнения и лимит.
@@ -129,7 +133,25 @@ tasks = {"task1": 5, "task2": 3, "task3": 7, "task4": 2}
 time_limit = 10
 Пример вывода:
 Задачи с лимитом по времени:
-{'task3': 7, 'task2': 3'''
+{'task3': 7, 'task2': 3}
+'''
+def select_tasks(tasks: dict, time_limit: int) -> dict:
+    result = {}
+    remaining_time = time_limit
+
+    # сортируем по времени выполнения по убыванию
+    for task, time in sorted(tasks.items(), key=lambda x: x[1], reverse=True):
+        if time <= remaining_time:
+            result[task] = time
+            remaining_time -= time
+
+    return result
+
+tasks = {"task1": 5, "task2": 3, "task3": 7, "task4": 2}
+time_limit = 10
+
+print("Задачи с лимитом по времени:")
+print(select_tasks(tasks, time_limit))
 
 '''6. Анализ оценок студентов
 Дан список студентов с их оценками по разным предметам.
@@ -144,20 +166,38 @@ students = [
  {"name": "Diana", "grades": [88, 84, 82]}
 ]
 Пример вывода:
-{'Charlie': 92.33, 'Alice': 87.67, 'Diana': 84.67, 'Bob': 78.0'''
+{'Charlie': 92.33, 'Alice': 87.67, 'Diana': 84.67, 'Bob': 78.0}'''
+
+def sort_students(students: list[dict[str, list[int]]]) -> dict[str, float]:
+    stud_avg_grades = {item["name"]: round((sum(item["grades"]) / len(item["grades"])), 2) for item in students}
+    return sorted(stud_avg_grades.items(), key=lambda item: item[1], reverse=True)
+
+students = [
+ {"name": "Alice", "grades": [90, 85, 88]},
+ {"name": "Bob", "grades": [78, 81, 75]},
+ {"name": "Charlie", "grades": [95, 92, 90]},
+ {"name": "Diana", "grades": [88, 84, 82]}
+]
+
+print(sort_students(students))
 
 '''7. Поиск максимального элемента
 Отсортируйте слова в списке исходя из суммы порядковых номеров всех символов в слове.
-К примеру "kiwi" = ord("k") + ord("i") + ord("w") + ord("i") = 107 + 105 + 119 + 105 + 436.
+К примеру "kiwi" = ord("k") + ord("i") + ord("w") + ord("i") = 107 + 105 + 119 + 105 = 436.
 Попробуйте решить в одну строку с помощью lambda и функций высшего порядка.
 Данные:
 words = ["banana", "kiwi", "grapefruit", "apple"]
 Пример вывода:
 ['kiwi', 'apple', 'banana', 'grapefruit']'''
+def sort_words(words: list[str]) -> list[str]:
+    return sorted(words, key=lambda word: sum(ord(x) for x in word))
+
+words = ["banana", "kiwi", "grapefruit", "apple"]
+
+print(sort_words(words))
 
 '''8. Очередь с LRU-кэшированием
-Реализуйте функцию, которая поддерживает механизм LRUкэша для очереди задач. Функция должна
-принимать:
+Реализуйте функцию, которая поддерживает механизм LRU-кэша для очереди задач. Функция должна принимать:
 ● Текущую очередь задач.
 ● Новые задачи для добавления.
 ● Максимальный размер очереди.
