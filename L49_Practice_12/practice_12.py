@@ -261,23 +261,6 @@ data = {
  "score": 95
 }
 
-# Рабочее рекурсивное решение
-def dict_converter(data: dict, parent_key: str = "") -> dict:
-    if not isinstance(data, dict):
-        raise TypeError("Аргумент должен быть словарём")
-
-    result = {}
-
-    for key, value in data.items():
-        full_key = f"{parent_key}.{key}" if parent_key else key
-
-        if isinstance(value, dict):
-            result.update(dict_converter(value, full_key))
-        else:
-            result[full_key] = value
-
-    return result
-
 # Использование и вывод
 convert_data = dict_converter(data)
 
