@@ -162,14 +162,16 @@
 # dd = defaultdict(list)
 # dd['a'].append(1)
 
-# from collections import defaultdict
-#
-# dd = defaultdict(list)
-# dd['x'].append(1)
-# dd['y'].extend([2, 3])
-# print(dd['z'])
-# print(dd)
+from collections import defaultdict
 
+dd = defaultdict(list)
+dd['x'].append(1)
+dd['y'].extend([2, 3])
+print(dd['z'])
+print(dd)
+aa = dd['x']
+print(aa)
+print(dd)
 
 # 1. Подсчёт символов в строке:
 # from collections import Counter
