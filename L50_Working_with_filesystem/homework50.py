@@ -98,4 +98,5 @@ if user_answer == "y":
 else:
     print("Удаление отменено.")
 
-# Для запуска python E:\\REPO\\learning\\python\\ich-py\\L50_Working_with_filesystem\\homework50.py E:\\REPO\\learning\\python\\ich-py\\L50_Working_with_filesystem\\test_dir .txt
+# Для запуска python E:\\REPO\\learning\\python\\ich-py\\L50_Working_with_filesystem\\homework50.py E:\\REPO\\learning\\
+# python\\ich-py\\L50_Working_with_filesystem\\test_dir .txt
