@@ -1,0 +1,37 @@
+2025-02-02,Brittany Lowe,2255
+2025-02-03,Hannah Kent,2134
+2025-02-04,Alison Charles,3283
+2025-02-05,Roberta Salas,3963
+2025-02-06,Chase Norton,3218
+2025-02-08,Kevin Martinez,4336
+2025-02-09,Catherine Robinson,640
+2025-02-09,Jessica Stephens,670
+2025-02-10,Anthony Villanueva,534
+2025-02-11,Laura Key,3680
+2025-02-12,Dr. Emily Smith,2965
+2025-02-12,Mr. Kevin Ali III,2606
+2025-02-12,David Johnson,3320
+2025-02-13,Thomas Jackson PhD,2018
+2025-02-13,Patricia Berg,4544
+2025-02-14,Jennifer Robinson,4737
+2025-02-14,Sarah Brown,4144
+2025-02-14,Anthony Farley,671
+2025-02-18,Victoria Decker,683
+2025-02-18,Karen Jones,1678
+2025-02-20,Tara Young MD,1203
+2025-02-20,Russell Ramos,3065
+2025-02-20,Michael Olson,3666
+2025-02-21,Emily Lee,1860
+2025-02-21,Amanda Brock,1456
+2025-02-21,Rebecca Powers,3402
+2025-02-22,Bethany Wilson,4286
+2025-02-22,Sandra Collins,2139
+2025-02-23,Chad Alvarez,2409
+2025-02-24,Susan Cooper,2197
+2025-02-26,Lawrence Wolfe,1748
+2025-02-26,Michael Smith,4340
+2025-02-27,Brandon Johnson,4271
+2025-02-27,Mark Ryan,4319
+2025-02-27,Becky Larson,4947
+2025-02-28,Andrea Navarro,1628
+2025-02-28,Jennifer Chan,4967

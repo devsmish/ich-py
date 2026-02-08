@@ -1,0 +1,35 @@
+2024-10-02,Kenneth Jensen,2846
+2024-10-03,Rebecca Odonnell,720
+2024-10-03,Sharon Huynh,3949
+2024-10-03,Michael Franklin,3779
+2024-10-04,Brian Payne,3907
+2024-10-05,Austin Sosa,2670
+2024-10-07,Casey Cox,4583
+2024-10-08,Shannon Smith,2401
+2024-10-08,Jack Mullins,3331
+2024-10-09,Stephen Hernandez,3973
+2024-10-09,Robert Nelson,2002
+2024-10-10,Drew Green,3573
+2024-10-12,Brian Roberts,4655
+2024-10-13,Timothy Logan,1315
+2024-10-15,Donald Cherry,758
+2024-10-17,Andrew Cain,1123
+2024-10-17,Brandon Reid,1294
+2024-10-17,Gregory Smith,3260
+2024-10-20,Paige Harper,2513
+2024-10-21,Rachel Olson,4783
+2024-10-21,Ashley Smith,3991
+2024-10-22,Susan Brown,2067
+2024-10-23,Michael Olson,1677
+2024-10-23,Mikayla Daniels,3041
+2024-10-23,Gabrielle Bush,535
+2024-10-23,Rachel Stevens,560
+2024-10-24,Tiffany Ray,1582
+2024-10-24,Erin Johnson PhD,3662
+2024-10-26,Theresa Wise,1138
+2024-10-28,Michael Marshall,2750
+2024-10-29,William Gonzalez,3171
+2024-10-29,Mr. Daniel Cruz,3307
+2024-10-30,Scott Bell,1906
+2024-10-30,Jeffrey Phillips,4720
+2024-10-31,Kevin Gonzalez,4186

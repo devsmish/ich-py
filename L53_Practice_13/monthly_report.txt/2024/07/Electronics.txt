@@ -1,0 +1,25 @@
+2024-07-01,Joseph Johnson,4068
+2024-07-02,Cory Huff,2044
+2024-07-02,Casey Barr,3570
+2024-07-03,Candace Davis,2730
+2024-07-03,Angela King,645
+2024-07-08,Melanie Grimes,853
+2024-07-09,Nicholas Crosby,4841
+2024-07-09,Nicole Vaughn,3932
+2024-07-11,Karen Stevenson,1374
+2024-07-12,Kimberly Lee,3653
+2024-07-13,Melissa Robbins,2322
+2024-07-15,Vincent Herrera,4690
+2024-07-16,Mark Smith,2084
+2024-07-18,Tony Thompson,4991
+2024-07-18,Victoria Brown,1125
+2024-07-19,Marie Brown,2215
+2024-07-21,Kyle Davis,3905
+2024-07-22,Stephen Martinez,3089
+2024-07-22,Christopher Oliver,2548
+2024-07-23,Karen Moore MD,2258
+2024-07-24,Charles Hill,4152
+2024-07-27,Amy Williams,4615
+2024-07-27,Jeffrey Green,1786
+2024-07-29,Gregory Camacho,2612
+2024-07-31,Jennifer Alexander,4872

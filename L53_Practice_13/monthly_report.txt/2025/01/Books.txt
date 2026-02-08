@@ -1,0 +1,46 @@
+2025-01-01,Erika Miller,966
+2025-01-02,Christopher Vazquez,689
+2025-01-05,Randall Peterson,2305
+2025-01-05,Brandon Bullock,2671
+2025-01-06,James Pugh,1157
+2025-01-07,Lindsay Sanchez,2914
+2025-01-07,Ashley Johnson,845
+2025-01-08,Mrs. Heather Wolfe MD,4490
+2025-01-08,Kenneth Ruiz,2975
+2025-01-08,Joanna Pitts,4018
+2025-01-08,James Hughes,3552
+2025-01-11,Kerry Scott,885
+2025-01-11,John Lewis,5000
+2025-01-12,John Snow,1292
+2025-01-13,Amber Gibson,3613
+2025-01-13,Spencer Combs,2930
+2025-01-13,Jack Hansen,2131
+2025-01-13,Suzanne Martin,2583
+2025-01-14,Angela Fischer,3941
+2025-01-14,Joshua Smith,3834
+2025-01-14,David Delacruz,2118
+2025-01-15,John Garrison DDS,3195
+2025-01-16,Samantha Owens,1679
+2025-01-16,Robert Robinson,4869
+2025-01-17,Yvette Diaz,3314
+2025-01-18,Raymond Rodriguez,3816
+2025-01-18,Jonathan Nelson,1945
+2025-01-19,Sarah Turner,4796
+2025-01-21,Matthew Carroll,4676
+2025-01-21,Mario Cook,2433
+2025-01-22,Jennifer Pena,4484
+2025-01-22,Morgan Smith,3180
+2025-01-24,Vicki Daugherty,1118
+2025-01-24,Mark Andrews,3864
+2025-01-25,Catherine Shea,3136
+2025-01-25,Audrey Callahan MD,3768
+2025-01-26,Nathan Riley,571
+2025-01-26,Philip Jones,2913
+2025-01-26,Pamela Lucero,1593
+2025-01-26,Samantha Nguyen,3687
+2025-01-26,April Lee,3987
+2025-01-26,Amanda Zhang,4722
+2025-01-27,Paul Knight,3112
+2025-01-28,James Morrison,4190
+2025-01-30,Denise Wilson,2182
+2025-01-31,Brenda Mcbride,1021

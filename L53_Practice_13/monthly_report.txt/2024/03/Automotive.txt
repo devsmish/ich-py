@@ -1,0 +1,50 @@
+2024-03-02,Sara King,694
+2024-03-03,Jordan Nunez,1424
+2024-03-05,John Nelson,4191
+2024-03-07,Laura Carpenter,1109
+2024-03-07,William Mitchell,3304
+2024-03-07,Kevin Maxwell,563
+2024-03-07,Tracey Gutierrez,4414
+2024-03-07,Martin Allen,3520
+2024-03-09,Richard Long,3284
+2024-03-10,Dalton Singh,2713
+2024-03-10,James Maxwell,2354
+2024-03-12,Jennifer Hart,2441
+2024-03-12,Randy Anderson,1618
+2024-03-12,Andre Christensen,4296
+2024-03-12,Victoria Ponce,4693
+2024-03-13,Andrew Campbell,4576
+2024-03-13,Anita Bryant,2133
+2024-03-13,April Bradley,3741
+2024-03-14,Richard Shaw,2445
+2024-03-15,Yvonne Rollins,3989
+2024-03-15,Gary Morrow,3207
+2024-03-16,Kenneth Brewer,1891
+2024-03-17,Ronald Johnson,1758
+2024-03-17,John Zuniga DVM,2326
+2024-03-17,Shawn Garza,3232
+2024-03-17,Jennifer Greene,3344
+2024-03-17,Carlos Smith,1818
+2024-03-18,Anthony Bowman,2650
+2024-03-18,John Scott MD,883
+2024-03-19,Adrian Warren,4981
+2024-03-20,Christopher Taylor,4200
+2024-03-20,Erica Cooke,1696
+2024-03-20,Brian Daniels,3361
+2024-03-21,Melissa Castro,2743
+2024-03-21,Amber Davis,4711
+2024-03-22,Kristen Warren DDS,1571
+2024-03-24,Leslie Harris,2117
+2024-03-26,Nathan Mitchell,4573
+2024-03-27,Garrett Garner MD,1480
+2024-03-27,Donald Fuller,2457
+2024-03-27,Martha Barber,2083
+2024-03-27,Nicholas Lane,3432
+2024-03-27,Martha Atkins,2446
+2024-03-28,David Smith,4314
+2024-03-28,Nicole Mcintosh,2022
+2024-03-28,Robert Collier,614
+2024-03-28,Michael Hawkins,1517
+2024-03-29,Cathy Cross,2433
+2024-03-30,Clifford Donovan,2899
+2024-03-31,Corey Hill,4731

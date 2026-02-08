@@ -1,0 +1,7 @@
+Books,16281
+Clothing,11032
+Groceries,8781
+Electronics,7414
+Sports,10423
+Automotive,992
+Общая сумма: 54923

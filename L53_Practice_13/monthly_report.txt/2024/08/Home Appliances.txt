@@ -1,0 +1,33 @@
+2024-08-01,Tonya Thomas,4369
+2024-08-01,John Best,4155
+2024-08-01,Bryan Wagner,3657
+2024-08-02,Cynthia Gardner,3677
+2024-08-02,Jonathan Hall,4991
+2024-08-04,Mr. Michael Miller,3197
+2024-08-04,Ricardo Green,4896
+2024-08-04,Yolanda Lewis,1871
+2024-08-06,Steven Johnson,2151
+2024-08-07,Leslie Hartman,4856
+2024-08-08,Ariel Costa,4143
+2024-08-08,Jamie Walker,4837
+2024-08-09,Mary Stewart,1260
+2024-08-09,Karen Carr,2548
+2024-08-11,Kimberly Foster,3767
+2024-08-11,Lisa Sweeney,4232
+2024-08-12,Sarah George,3230
+2024-08-12,Sara Mathews,4167
+2024-08-13,Dr. Ashley Martinez,3014
+2024-08-13,Karen Allison,4371
+2024-08-14,Kristin Alexander,3012
+2024-08-14,Emma Crawford,3707
+2024-08-17,Megan Woodard,1253
+2024-08-19,Jennifer Herman,2205
+2024-08-20,Brian Hale,2700
+2024-08-20,Dale Burnett,3832
+2024-08-21,Dean Goodwin,4802
+2024-08-23,Leon Smith,2692
+2024-08-24,Robert Reed,4712
+2024-08-25,Jose Cole,912
+2024-08-25,Matthew Hernandez,2055
+2024-08-26,Alisha Bennett,1477
+2024-08-29,Zachary Martinez,1352

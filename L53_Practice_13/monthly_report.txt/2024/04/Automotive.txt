@@ -1,0 +1,40 @@
+2024-04-01,Donald Rodriguez,1837
+2024-04-01,Kimberly Harris,525
+2024-04-01,Kevin Quinn,3876
+2024-04-01,Jessica Robertson,932
+2024-04-02,Katherine Dunlap,3110
+2024-04-03,Rebecca Gibson,2409
+2024-04-04,Anna Guzman,3812
+2024-04-05,Mikayla Gardner,3244
+2024-04-05,Paul Brown DVM,2180
+2024-04-05,John Graves,2860
+2024-04-07,Christopher Smith,623
+2024-04-07,Angela Pena,4545
+2024-04-09,Joseph Lopez,4095
+2024-04-12,Joshua Johnson,4677
+2024-04-13,Joshua Kaiser,4511
+2024-04-13,Mr. Kurt Ritter,670
+2024-04-13,Mr. Seth Austin,4856
+2024-04-13,Bradley Anderson,4197
+2024-04-13,David Archer,3605
+2024-04-13,Gina Contreras,2472
+2024-04-13,Keith Valdez,4290
+2024-04-15,Nina Williamson,1345
+2024-04-17,Michael Garcia,1514
+2024-04-18,Jean Villa,4970
+2024-04-18,Nicole Stewart,1700
+2024-04-19,Amber Allen,2771
+2024-04-19,Kelly Guerrero,648
+2024-04-20,Charles Lang DDS,3502
+2024-04-20,Caroline Nelson,1039
+2024-04-23,Mike Howell,592
+2024-04-23,Christopher Smith,717
+2024-04-23,Regina Chambers,4006
+2024-04-24,Charlene Benson,1902
+2024-04-25,Amanda Lawson,4887
+2024-04-25,Thomas Barton,3759
+2024-04-25,Melvin Macdonald,668
+2024-04-26,Bryan Carroll,4111
+2024-04-27,Gary Shelton,3828
+2024-04-28,Jorge Mcdonald,4778
+2024-04-29,Francisco Lucas,2252

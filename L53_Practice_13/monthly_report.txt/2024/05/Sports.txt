@@ -1,0 +1,43 @@
+2024-05-03,Valerie Fitzgerald,3260
+2024-05-03,Jennifer Carroll,2200
+2024-05-03,Christina Harper PhD,1655
+2024-05-04,Cynthia Michael,2324
+2024-05-04,James Martinez,2834
+2024-05-04,Tyler Smith,3522
+2024-05-06,Mary Dudley,2158
+2024-05-07,Lawrence Osborn,2142
+2024-05-08,Eric Spencer,2396
+2024-05-08,Michael Walters,898
+2024-05-09,Mary Farmer,2735
+2024-05-09,Nicole Davis,523
+2024-05-09,Aaron Tucker,2592
+2024-05-10,Kathryn Hunt,1581
+2024-05-12,Courtney Villanueva,1953
+2024-05-13,Kristen Griffin,2717
+2024-05-15,Sydney Blair,2105
+2024-05-16,Jeffrey Villa,4519
+2024-05-17,Catherine Reed,740
+2024-05-17,Jon Sanders DDS,3758
+2024-05-17,Thomas Hayden,2716
+2024-05-18,Taylor Cruz,1741
+2024-05-18,David Parrish,3027
+2024-05-18,Ann Herrera,1971
+2024-05-18,Laurie Rogers,1347
+2024-05-19,Jeremy Johnston,1211
+2024-05-19,Ernest Padilla,3287
+2024-05-19,Kyle Morrison,533
+2024-05-20,Brad Gross,1145
+2024-05-20,Jessica Hahn,1226
+2024-05-21,Dr. Gregory Johnson,3962
+2024-05-21,Alisha Hicks,3526
+2024-05-22,Jennifer Craig,1806
+2024-05-23,David Watkins,4916
+2024-05-24,Austin Villarreal,1304
+2024-05-26,Anthony Vasquez,2042
+2024-05-26,Eric Dunn,4270
+2024-05-27,Gregory Clayton,1919
+2024-05-27,Dana Simpson,3190
+2024-05-28,Michelle Roberts,2744
+2024-05-29,Noah Werner,1578
+2024-05-30,Charles Walker,644
+2024-05-31,Stephanie Clarke,4846

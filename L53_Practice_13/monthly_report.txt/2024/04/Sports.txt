@@ -1,0 +1,23 @@
+2024-04-01,Teresa Davis,4526
+2024-04-02,Michael Freeman,723
+2024-04-03,Willie Jackson,1566
+2024-04-03,Kenneth Baker Jr.,2274
+2024-04-05,Kelsey Barrett,3495
+2024-04-06,Audrey Morales,1623
+2024-04-07,Crystal Farley,4589
+2024-04-10,Julie Soto,4897
+2024-04-15,Scott Hayes,3461
+2024-04-17,William Vargas,2212
+2024-04-18,Rodney Jackson,4711
+2024-04-20,Juan Clark,1839
+2024-04-23,Brandon Patel,663
+2024-04-23,David Wilson,4390
+2024-04-25,Brian Wagner,4089
+2024-04-26,Anthony Castro,2043
+2024-04-26,Justin Wood,1570
+2024-04-26,Patricia Sanchez,3402
+2024-04-26,Christine Coleman,661
+2024-04-27,Albert Payne,3325
+2024-04-28,Frank Oconnell,996
+2024-04-29,Sean Olsen,1724
+2024-04-29,Jessica Johnson,1288

@@ -1,0 +1,30 @@
+2024-07-01,Marc Bishop,1846
+2024-07-02,Yvonne Hayes,2005
+2024-07-05,Thomas Schroeder,4749
+2024-07-05,Chad Carroll,4450
+2024-07-06,Jennifer Moreno,844
+2024-07-08,Lauren Martinez,1187
+2024-07-09,Sharon Shaw,3349
+2024-07-09,David Hawkins,3581
+2024-07-10,John Roberts MD,4205
+2024-07-10,Ann Dunn,1260
+2024-07-10,Tina Valdez,2832
+2024-07-12,Cathy Sanchez,750
+2024-07-13,Jason Bradley,2511
+2024-07-14,Stephanie Lambert,2922
+2024-07-15,Michelle Stevens,4101
+2024-07-16,Michael Robertson,4600
+2024-07-18,Christina Evans,2165
+2024-07-18,Erica Baldwin,1767
+2024-07-20,Erica Williams,739
+2024-07-22,James Ramirez,3404
+2024-07-23,Jill Gilbert,3328
+2024-07-24,Brittany Brock,2481
+2024-07-24,Brenda Mccoy,4780
+2024-07-26,Kenneth Roberts,3080
+2024-07-27,Wanda Hines,1225
+2024-07-28,Mr. Trevor Brown,1464
+2024-07-28,Jared Dunlap,3594
+2024-07-29,Riley Wood,824
+2024-07-30,John Richard,4902
+2024-07-31,Troy Mcdonald,2073

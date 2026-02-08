@@ -1,0 +1,31 @@
+2024-12-02,Betty Allen,2551
+2024-12-03,Jordan Huerta,4989
+2024-12-05,William Rice,1719
+2024-12-07,Mary Hunter,500
+2024-12-08,Rachel Richardson,2672
+2024-12-08,Erin Phillips,2699
+2024-12-10,Eddie Jackson Jr.,3210
+2024-12-10,Bobby Diaz,4762
+2024-12-12,John Taylor,754
+2024-12-15,Susan Jones,2855
+2024-12-15,Matthew Atkinson,781
+2024-12-16,Christina Chapman,2686
+2024-12-16,Caleb Miller,4927
+2024-12-17,Lisa Harris,1673
+2024-12-17,Sandra Fisher,3068
+2024-12-17,Kevin Stone,984
+2024-12-17,Sean Long,4814
+2024-12-17,Christine Santos,2289
+2024-12-19,Yolanda Stewart,674
+2024-12-19,Diana Morgan,3261
+2024-12-20,Joshua Russo,3676
+2024-12-22,Alexis Conway DVM,2766
+2024-12-25,Kevin Snow,3468
+2024-12-25,Allison White,4266
+2024-12-26,Kelly Mcgrath,4964
+2024-12-26,Samuel Moore,2531
+2024-12-27,Victoria Sanchez,1157
+2024-12-27,Devin Ferguson,3121
+2024-12-28,Richard English,4778
+2024-12-28,Virginia Potter,2840
+2024-12-30,Julian Jones,2580

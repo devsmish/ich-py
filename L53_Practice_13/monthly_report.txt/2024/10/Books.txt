@@ -1,0 +1,44 @@
+2024-10-01,Amy Hood,4362
+2024-10-01,Eric Jacobson,1784
+2024-10-01,Heidi Long,3041
+2024-10-01,Lisa Thompson,4063
+2024-10-02,Scott Rodriguez,1535
+2024-10-02,Kathryn Morrow,1592
+2024-10-03,Jacob Anderson,1228
+2024-10-03,Peter Ortiz DDS,3073
+2024-10-06,Shawn Wade,3925
+2024-10-06,Hannah Charles,794
+2024-10-07,Mathew Taylor,965
+2024-10-08,David Thomas,1686
+2024-10-08,Mark Harris,4819
+2024-10-10,Jose Thompson,2004
+2024-10-11,William Miller,1576
+2024-10-13,Tracy Clark,3473
+2024-10-13,Veronica Herring DDS,2296
+2024-10-14,Margaret Taylor,1317
+2024-10-14,Gary Kim,4974
+2024-10-14,Amanda Norton,2832
+2024-10-15,Melinda Walker,2368
+2024-10-17,Dr. Michael Riggs,621
+2024-10-17,Monica Hernandez,4524
+2024-10-20,Amber Brooks,2909
+2024-10-21,Robin Garcia,1997
+2024-10-21,Nancy Peterson,3377
+2024-10-22,Suzanne Perez,4255
+2024-10-22,Joseph Flores,3436
+2024-10-22,Shawn Davis,1296
+2024-10-24,Anita Guerra,514
+2024-10-24,Erika Parker,2080
+2024-10-25,Matthew Cohen,2101
+2024-10-25,Melanie Hernandez,1719
+2024-10-25,Ian Joyce,3458
+2024-10-26,Kathleen Shelton,2313
+2024-10-27,Joseph Martinez,1897
+2024-10-28,Brian Smith,3539
+2024-10-28,Amanda Lopez,3801
+2024-10-29,Alexandra Brown,4835
+2024-10-30,Morgan Kelly,3128
+2024-10-30,Kristin Hogan,1647
+2024-10-30,Denise Leblanc,2351
+2024-10-31,Jay Bradshaw,1314
+2024-10-31,Jerry Scott,3129

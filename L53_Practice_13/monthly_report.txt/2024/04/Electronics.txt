@@ -1,0 +1,44 @@
+2024-04-01,Mario Anderson,1742
+2024-04-01,Michael Herrera,4977
+2024-04-01,Rachel Gillespie MD,4057
+2024-04-01,Darren Morrow,1371
+2024-04-01,Alexis Roberts,3299
+2024-04-03,Kayla Rios,1458
+2024-04-04,Tiffany Moran,4797
+2024-04-07,Brian Vaughn,4330
+2024-04-07,Amber Howe,3445
+2024-04-07,Lisa Sanchez,1032
+2024-04-09,Sabrina Rivera,4825
+2024-04-11,Shelia Lewis,4661
+2024-04-12,Raymond Brewer,1519
+2024-04-13,Mr. Brian Curry,3323
+2024-04-14,Marvin Lester,3349
+2024-04-14,Thomas Osborne,3084
+2024-04-15,John Peters,4517
+2024-04-15,Erin Smith,3225
+2024-04-15,Amber Garcia,1303
+2024-04-16,Kimberly Floyd,2151
+2024-04-16,Darlene Drake,3295
+2024-04-17,Nathan Watkins,3845
+2024-04-17,Matthew Gonzalez,1517
+2024-04-17,Erin Owens MD,1021
+2024-04-17,Bradley Wilson,2919
+2024-04-18,Brandon Brewer,583
+2024-04-18,Scott Jimenez,4049
+2024-04-19,Logan Hodges,4039
+2024-04-19,Melissa Jones,4079
+2024-04-19,Maria Perez,1860
+2024-04-21,Christopher Valdez,1292
+2024-04-22,Gregory Jennings,2264
+2024-04-22,Jasmine Smith,1801
+2024-04-23,Michael Rios,2087
+2024-04-23,Tina Page,526
+2024-04-24,Michael Miller,714
+2024-04-26,Wendy Allen,4803
+2024-04-26,Charlotte Mitchell,2023
+2024-04-27,Michelle Ramos,3548
+2024-04-27,Tanya Goodwin,851
+2024-04-27,Joshua Beltran,2758
+2024-04-28,Amy Miller,3382
+2024-04-28,Kevin Haley,4956
+2024-04-28,Chelsea Howard,1982

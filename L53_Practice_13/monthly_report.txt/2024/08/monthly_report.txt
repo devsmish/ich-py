@@ -1,0 +1,8 @@
+Clothing,125933
+Books,125980
+Sports,109992
+Automotive,104982
+Home Appliances,108100
+Groceries,98196
+Electronics,87210
+Общая сумма: 760393

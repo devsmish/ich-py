@@ -1,0 +1,42 @@
+2024-11-02,Brian Cook,4349
+2024-11-04,Paula Charles,4468
+2024-11-05,Dr. Monica Woodard,1093
+2024-11-06,Samantha Little,2594
+2024-11-07,Rebecca Mathews,3440
+2024-11-08,John Young,3587
+2024-11-09,Victor Thomas,1610
+2024-11-10,Larry Jackson,1024
+2024-11-10,Amy Romero,2458
+2024-11-10,Jonathan Mason,1163
+2024-11-10,Troy Ware DDS,1549
+2024-11-10,Christopher Blanchard,1706
+2024-11-11,Justin Rivas,4457
+2024-11-12,Benjamin Knight,3669
+2024-11-13,Diane Ford,3874
+2024-11-13,Patricia Holland,1006
+2024-11-14,Willie Smith,2977
+2024-11-14,Taylor Sanchez,1544
+2024-11-15,Margaret Rocha,2377
+2024-11-16,Randy Arias,1365
+2024-11-18,Christopher Perry,2466
+2024-11-20,Harry Humphrey,4595
+2024-11-21,Jorge Hill,648
+2024-11-22,James Mullins,1684
+2024-11-22,Justin Reyes,1813
+2024-11-22,Jacob Rodriguez,3418
+2024-11-23,Melody Hudson,2268
+2024-11-23,Robert Ruiz,4459
+2024-11-23,Richard Hawkins,1349
+2024-11-24,Mark Bradford,844
+2024-11-24,Ronald Gomez,2463
+2024-11-25,Matthew Vargas,4066
+2024-11-26,Christina Weaver,1688
+2024-11-26,Brittany Martin,3351
+2024-11-26,Stacey Banks,1515
+2024-11-26,Jason Anderson,727
+2024-11-28,Melanie Greene,3193
+2024-11-28,Anthony Weber,982
+2024-11-29,Patrick Serrano,3901
+2024-11-29,Scott Green,4620
+2024-11-30,Luis Hughes,4112
+2024-11-30,Rhonda Miller MD,1923

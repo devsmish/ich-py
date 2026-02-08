@@ -1,0 +1,37 @@
+2024-12-01,Jason Perez,720
+2024-12-02,Jason Medina,701
+2024-12-02,Michael Thompson,2493
+2024-12-03,Karen Wells,1344
+2024-12-03,Michelle Wells,2589
+2024-12-04,Douglas Hoover,3181
+2024-12-04,Robert Johnson,4651
+2024-12-05,Jessica Cabrera,1773
+2024-12-05,Tina Conley,2294
+2024-12-07,Lisa Noble,4174
+2024-12-07,Jamie Singleton,3892
+2024-12-07,Amanda Wang,976
+2024-12-07,Nicole Watson,932
+2024-12-08,Jason Mercer,2932
+2024-12-08,Justin Lamb,2229
+2024-12-08,Geoffrey Rodriguez,4309
+2024-12-09,Christopher Parker,3133
+2024-12-09,James Faulkner,784
+2024-12-12,Ashley Martin,988
+2024-12-14,Dr. David Rose,4508
+2024-12-15,Karen Powers,4896
+2024-12-15,Gary Simpson,2578
+2024-12-16,Angelica Ramirez,1014
+2024-12-17,James Bell,1709
+2024-12-17,David Green,922
+2024-12-21,Elizabeth Coleman,1929
+2024-12-23,Paige Owen,3939
+2024-12-24,Joseph Macias,3080
+2024-12-25,Melinda Gonzalez,4602
+2024-12-27,Paula Johnston,1017
+2024-12-27,Jacob Burgess,1679
+2024-12-28,Kristin Wilcox,4359
+2024-12-29,Mitchell Gutierrez,3780
+2024-12-30,Kelly Henderson,2644
+2024-12-30,Joshua Yates,1215
+2024-12-30,Victoria Gonzales MD,2004
+2024-12-31,Jeffrey Collins,2507
