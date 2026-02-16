@@ -22,5 +22,3 @@ for name, grades in student_grades.items():
 # Alice: 86.0
 # Bob: 87.0
 # Charlie: 84.8
-
-
