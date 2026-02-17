@@ -229,13 +229,17 @@ for _ in range(5):
 Введите задачу: exit'''
 # task_writer.py
 def write_to_file(filename='tasks.txt'):
-    with open(filename, 'a', encoding='utf-8') as file:
-        while True:
-            task = input('Введите задачу, "exit" to exit: ')
+    while True:
+        with open(filename, 'a', encoding='utf-8') as file:
+            task = input('Введите задачу, "exit" to exit: ').strip()
+
             if task == 'exit':
                 break
-            file.write(task + '\n')
-            print('Задача успешно записана!')
+
+            if task:
+                file.write(task + '\n')
+
+                print('Задача успешно записана!')
 
 write_to_file('tasks.txt')
 
@@ -258,28 +262,33 @@ import time
 def task_generator(employees, filename='tasks.txt'):
     employees_cycle = cycle(employees)
 
-    try:
-        with open(filename, 'r', encoding = 'utf-8') as file:
-            while True:
-                task = file.readline().strip()
+    for retry in range(5):
+        try:
+            with open(filename, 'r', encoding = 'utf-8') as file:
+                while True:
+                    task = file.readline().strip()
 
-                if task:
-                    employees = next(employees_cycle)
+                    if task:
+                        employees = next(employees_cycle)
 
-                    yield employees, task
+                        yield employees, task
 
-                else:
-                    print('Задания закончились, ожидаем 3 секунды.')
+                    else:
+                        print('Задания закончились, ожидаем 3 секунды.')
 
-                    time.sleep(3)
+                        time.sleep(3)
 
-    except FileNotFoundError:
-        pass
+        except FileNotFoundError:
+            print('Файл не найден, ожидаем 3 секунды.', 'Попыток затрачено:', retry)
+
+            time.sleep(3)
+
+    else:
+        print("Файл не был обнаружен, завершение выполнения.")
 
 employees = ["Alice", "Bob", "Charlie"]
 
 gen_ = task_generator(employees)
 
-for _ in range(8):
-    emp, task = gen_.__next__()
+for emp, task in gen_:
     print(emp, 'выполняет:', task)
