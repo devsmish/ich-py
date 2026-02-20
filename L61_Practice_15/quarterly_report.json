@@ -1,0 +1,82 @@
+{
+    "Bob": {
+        "Science": {
+            "Q1": 86
+        },
+        "Literature": {
+            "Q2": 81,
+            "Q3": 81
+        },
+        "History": {
+            "Q1": 78,
+            "Q2": 72
+        }
+    },
+    "Diana": {
+        "Science": {
+            "Q2": 85
+        },
+        "Physics": {
+            "Q3": 82
+        },
+        "History": {
+            "Q2": 85
+        },
+        "Literature": {
+            "Q1": 71
+        }
+    },
+    "Ethan": {
+        "Literature": {
+            "Q3": 84,
+            "Q2": 95
+        },
+        "Math": {
+            "Q2": 80
+        },
+        "Science": {
+            "Q1": 80
+        },
+        "History": {
+            "Q3": 66,
+            "Q2": 62,
+            "Q1": 85
+        }
+    },
+    "Charlie": {
+        "Science": {
+            "Q1": 63,
+            "Q3": 80,
+            "Q2": 74
+        },
+        "Literature": {
+            "Q2": 74
+        },
+        "Physics": {
+            "Q2": 93,
+            "Q3": 80
+        },
+        "Math": {
+            "Q1": 66
+        }
+    },
+    "Alice": {
+        "Physics": {
+            "Q1": 90
+        },
+        "Science": {
+            "Q1": 64,
+            "Q3": 84
+        },
+        "Literature": {
+            "Q1": 80
+        },
+        "Math": {
+            "Q3": 85,
+            "Q1": 69
+        },
+        "History": {
+            "Q1": 90
+        }
+    }
+}
