@@ -122,3 +122,123 @@ print(multiply(1,b=3))
 print(multiply(1,b=2))
 print(multiply(1,b=4))
 print(multiply(1,b=3))
+
+'''5. Журнал вызовов функции
+Создайте декоратор log_to_file, который будет записывать в файл все вызовы
+функции с её аргументами и результатом.
+Лог сохраняется в файл call_log.log, каждый вызов — на новой строке.
+Пример применения:
+@log_to_file
+def add(a, b):
+ return a + b
+@log_to_file
+def greet_with_name(name, punctuation="!"):
+ return f"Hello, {name}{punctuation}"
+@log_to_file
+def greet():
+ return "Hello"
+Пример вывода (файл call_log.log):
+function: add | args: 5, 3; kwargs: None | return: 8
+function: greet_with_name | args: Alice; kwargs: punctuation='.' | return: Hello, Alice.
+function: greet | args: None; kwargs: None | return: Hello'''
+import logging
+
+
+logging.basicConfig(
+    filename="call_log.log",
+    level=logging.INFO,
+    format="%(message)s",
+    encoding="utf-8"
+    )
+def log_to_file(func):
+    def wrapper(*args, **kwargs):
+        result = func(*args, **kwargs)
+        all_args = ", ".join(str(arg) for arg in args)
+        all_kwargs = ", ".join(f"{k}={v!r}" for k, v in kwargs.items())
+        logging.info(f"function: {func.__name__} | " f"args: {all_args if all_args else None}; kwargs:"
+                     f"{all_kwargs if all_kwargs else None} | " f"return: {result}")
+        return result
+    return wrapper
+
+@log_to_file
+def add(a, b):
+    return a + b
+
+@log_to_file
+def greet_with_name(name, punctuation="!"):
+    return f"Hello, {name}{punctuation}"
+
+@log_to_file
+def greet():
+    return "Hello"
+
+# Использование
+add(5, 3)
+greet_with_name("Alice", punctuation=".")
+greet()
+
+'''6. Проверка типов аргументов по порядку
+Создайте декоратор accepts_types, который проверяет, что позиционные аргументы функции соответствуют указанным типам.
+Если тип хотя бы одного аргумента не совпадает — должна быть выброшена ошибка
+TypeError с указанием ожидаемого и полученного типа.
+Пример применения:
+@accepts_types(int, int)
+def add(a, b):
+ return a + b
+@accepts_types(str)
+def greet(name):
+ return f"Hello, {name}!"
+@accepts_types(str, str)
+def greet_by_name(name, punctuation="!"):
+ return f"Hello, {name}{punctuation}"
+Пример вызова:
+try:
+ print(add(5, 3))
+ print(greet_by_name("Anna"))
+ print(add("one", 3)) # ошибка
+ print(greet_by_name("Anna", 0)) # ошибка
+except Exception as e:
+ print(e)
+Пример вывода:
+8
+Hello, Anna!
+Incorrect type for argument 'one': expected - <class 'int'>, received - <class
+'str'>
+Incorrect type for argument '0'
+: expected
+-
+<class 'str'>, received
+-
+<class
+'int'
+>'''
+def accepts_types(*expected_types):
+    def decorator(func):
+        def wrapper(*args):
+            for arg, expected in zip(args, expected_types):
+                if not isinstance(arg, expected):
+                    raise TypeError(f"Incorrect type for argument '{arg}': expected - {expected}, received - {type(arg)}")
+            return func(*args)
+        return wrapper
+    return decorator
+
+@accepts_types(int, int)
+def add(a, b):
+    return a + b
+
+@accepts_types(str)
+def greet(name):
+    return f"Hello, {name}!"
+
+@accepts_types(str, str)
+def greet_by_name(name, punctuation="!"):
+    return f"Hello, {name}{punctuation}"
+
+# Вызовы функций
+try:
+    print(add(5, 3))
+    print(greet_by_name("Anna"))
+# print(add("one", 3)) # ошибка
+    print(greet_by_name("Anna", 0)) # ошибка
+except Exception as e:
+    print(e)
