@@ -31,16 +31,16 @@ for _ in range(n):
     print(next(gen))
 
 # Correct option
-def fibonacci_row(n):
-    a, b = 0, 1
-    for _ in range(n):
-        yield a
-        a, b = b, a + b
+def fibonacci_row():
+    fib_last, fib_cur = 0, 1
+    while True:
+        yield fib_last
+        fib_last, fib_cur = fib_cur, fib_last + fib_cur
 
 n = int(input("Enter a length Fibonacci row: "))
-
-for num in fibonacci_row(n):
-    print(num)
+num = fibonacci_row()
+for _ in range(n):
+    print(next(num))
 
 '''2. Генератор уникальных элементов
 Создайте генератор, который принимает список элементов и выдаёт только уникальные значения, сохраняя

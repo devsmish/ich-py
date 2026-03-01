@@ -13,7 +13,7 @@ Deadline: 28/02/2022."
 import re
 
 text = "The events N 123456 happened on 15/03/2025, 01.12.2024 and 09-09-2023. Deadline: 28/02/2022."
-date_list = re.findall(r"\d{2}/\d{2}/\d{4} | \d{2}-\d{2}-\d{4} | \d{2}.\d{2}.\d{4}", text)
+date_list = re.findall(r"\d{2}/\d{2}/\d{4}|\d{2}-\d{2}-\d{4}|\d{2}\.\d{2}\.\d{4}", text)
 for date in date_list:
     print(date)
 
