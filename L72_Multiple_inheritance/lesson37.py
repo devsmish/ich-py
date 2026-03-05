@@ -205,5 +205,3 @@ class Smartphone:
 
 phone = Smartphone("Pixel 9", 4000)
 phone.play_video()
-
-
